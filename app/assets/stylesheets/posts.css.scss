@@ -1,0 +1,118 @@
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------GENERAL--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+body {
+  background: linear-gradient(to bottom, #CFD7D9 0%, #fff 60%) no-repeat;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #A32622;
+    text-decoration: underline;
+  }
+}
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+ul li {
+  font-size: 12px;
+  list-style: none;
+}
+#notice {
+  color: green;
+}
+/*----------------------------------------------------------------------------------*/
+/*---------------------------------------WRAP---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrap {
+  width: 900px;
+  margin: 0 auto;
+
+  .header {
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    .blog-title {
+      float: left;
+      padding: 10px 50px 0;
+    }
+
+    .reg {
+      float: right;
+      padding: 45px 70px 0 0;
+
+      li {
+        display: inline;
+
+        a {
+          padding: 7px;
+        }
+      }
+    }
+  }
+  #banner {
+    width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    h3 {
+      text-align: center;
+      padding-top: 15px;
+    }
+    a{
+      display: block;
+      text-align: center;
+    }
+    #close {
+      a {
+        text-align: right;
+        padding: 0 10px;
+      }
+    }
+  }
+  .content {
+    border-bottom: 1px solid #A7C3CF;
+
+    .create-post {
+      text-align: right;
+      padding: 0 70px;
+    }
+    .rating {
+      .up, .down {
+        border: 1px solid green;
+        padding: 2px 15px;
+        margin: 0 10px;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+      .down {
+        border-color: red;
+      }
+    }
+    .edit-list {
+      margin-bottom: 35px;
+    }
+  }
+  .footer {
+    p {
+      text-align: center;
+    }
+  }
+}
